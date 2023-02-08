@@ -14,7 +14,7 @@ body {
 }
 
 header {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1%;
@@ -22,16 +22,13 @@ header {
   color: var(--light);
 }
 
-a[href*='.css']::after {
-  content: '📝';
-  display: inline-block;
-  margin-left: 3px;
-}
-
 nav ul {
   display: flex;
   justify-content: space-between;
   min-width: 300px;
+  flex: box;
+  margin: 5%;
+  font-size: 150%;
 }
 
 nav a {
@@ -39,6 +36,8 @@ nav a {
   color: var(--navlink);
   font-weight: bold;
   text-decoration: none;
+  margin: 20px;
+  border-bottom: 5px  solid var(--navlink);
 }
 
 nav a:hover {
@@ -53,7 +52,8 @@ main {
 }
 
 article {
-  border: 5px solid var(--dark);
+  padding: 7px;
+  border: 5px solid var(--navlink);
   margin: 10px;
 }
 
@@ -77,9 +77,7 @@ article p {
 }
 
 nav ul {
-  flex:box
-  margin: 5%;
-  font-size: 150%;
+
 }
 
 footer {
